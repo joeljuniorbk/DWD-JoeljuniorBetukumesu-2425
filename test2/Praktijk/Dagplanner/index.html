@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dagenplanner</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>🗓️ Dagplanner</h1>
+      <img src="img/middag.jpg" alt="" id="icon">
+    </div>
+    <button type="button" id="reset-btn">Reset dag</button>
+    <button type="button" id="theme-toggle">Donker/Licht</button>
+    <ul id="planner" tabindex="0">
+      <li class="planner-part" data-icon="img/ochtend.jpg">
+        <span class="time">ochtend</span>
+        <div class="task">vuilbakken buiten zetten<br>planten water geven</div>
+        <ul class="actions">
+          <li><a href="" class="task-edit">✏️</a></li>
+          <li><a href="" class="task-clear">🗑️</a></li>
+        </ul>
+      </li>
+      <li class="planner-part current" data-icon="img/middag.jpg">
+        <span class="time">middag</span>
+        <div class="task"></div>
+        <ul class="actions">
+          <li><a href="" class="task-edit">✏️</a></li>
+          <li><a href="" class="task-clear">🗑️</a></li>
+        </ul>
+      </li>
+      <li class="planner-part" data-icon="img/namiddag.jpg">
+        <span class="time">namiddag</span>
+        <div class="task">sporten</div>
+        <ul class="actions">
+          <li><a href="" class="task-edit">✏️</a></li>
+          <li><a href="" class="task-clear">🗑️</a></li>
+        </ul>
+      </li>
+      <li class="planner-part" data-icon="img/avond.jpg">
+        <span class="time">avond</span>
+        <div class="task">koken<br>afwassen<br>studeren</div>
+        <ul class="actions">
+          <li><a href="" class="task-edit">✏️</a></li>
+          <li><a href="" class="task-clear">🗑️</a></li>
+        </ul>
+      </li>
+      <li class="planner-part" data-icon="img/nacht.jpg">
+        <span class="time">nacht</span>
+        <div class="task"></div>
+        <ul class="actions">
+          <li><a href="" class="task-edit">✏️</a></li>
+          <li><a href="" class="task-clear">🗑️</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <!-- edit modal -->
+  <div id="edit-modal" class="modal hidden">
+    <form class="modal-content">
+      <textarea class="modal-editor" rows="7" placeholder="vul hier je taken in..."></textarea>
+      <p class="modal-message"></p>
+      <button type="button" class="btn-cancel">annuleren</button>
+      <button type="submit" class="btn-ok">ok</button>
+    </form>
+  </div>
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>
