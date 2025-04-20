@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simple Chatroom</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <h1>Simple chatroom</h1>
+
+  <button id="toggle-theme">Toggle Dark Mode</button>
+
+  <div class="chatbox" id="chat-log"></div>
+
+  <p id="typing-indicator" class="hidden">💬 User is typing...</p>
+
+  <form id="comment-form">
+    <label>
+      Your Email *
+      <input type="email" name="email" id="email" required/>
+    </label>
+    <label>
+      Your Comment *
+      <textarea id="comment" required></textarea>
+    </label>
+    <button type="submit">Add comment</button>
+  </form>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.19.0/js/md5.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
