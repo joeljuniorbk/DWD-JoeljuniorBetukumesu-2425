@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MovieAPI</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <h1>MovieAPI</h1>
+    <p>Zoek films en ontdek details over de cast</p>
+  </header>
+
+  <main class="layout">
+    <section class="zoek-blok">
+      <h2>Zoek een film</h2>
+      <form id="search-form">
+        <input type="text" id="title-input" placeholder="Typ een filmtitel...">
+        <div class="button-group">
+          <button type="submit" id="search-btn">Zoek</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="result-blok">
+      <h2>Filmresultaat</h2>
+      <div id="movie-result" class="result">
+        <p class="placeholder">Voer een titel in om te starten.</p>
+      </div>
+    </section>
+
+    <section class="actor-blok">
+      <h2>Hoofdacteur</h2>
+      <div id="actor-result" class="result">
+        <p class="placeholder">Geen acteurinfo beschikbaar.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
